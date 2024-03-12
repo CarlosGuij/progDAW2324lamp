@@ -81,6 +81,7 @@ if (!isset($_SESSION['user'])) {
             }
         //} 
         echo '</table>';
+        
 
         //Para mostrar la Paginación
         $pagBefore = ($pagActive==1) ? 1 : $pagActive-1;
@@ -95,7 +96,7 @@ if (!isset($_SESSION['user'])) {
         }
         $pagAfter = ($pagActive==$numPag) ?  $numPag : $pagActive+1;
         echo " <a href='index.php?page=$pagAfter'>></a> ";
-
+        
         $result->close();
 
         ?>
